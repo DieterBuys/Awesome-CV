@@ -675,31 +675,31 @@
 }
 
 % Define an environment for cv summary
-% \newenvironment{cventrysummary}{
-%   \vspace{-4.0mm}
-%   \begin{justify}
-% }{
-%   \end{justify}
-%   \vspace{-4.0mm}
-% }
+\newenvironment{cventrysummary}{
+  \vspace{-4.0mm}
+  \begin{justify}
+}{
+  \end{justify}
+  \vspace{-4.0mm}
+}
 
 % Define an entry of cv information with summary
 % Usage: \cventrywithsummary{<position>}{<title>}{<location>}{<date>}{<description>}{summary}
-% \newcommand*{\cventrywithsummary}[6]{%
-%   \vspace{-2.0mm}
-%   \setlength\tabcolsep{0pt}
-%   \setlength{\extrarowheight}{0pt}
-%   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
-%     \ifempty{#2#3}
-%       {\entrypositionstyle{#1} & \entrydatestyle{#4}}
-%       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-%       \entrypositionstyle{#1} & \entrydatestyle{#4}}
-%     \ifempty{#6}
-%       {\\ \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
-%       {\\ \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}} \\
-%        \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
-%   \end{tabular*}%
-% }
+\newcommand*{\cventrywithsummary}[6]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    \ifempty{#2#3}
+      {\entrypositionstyle{#1} & \entrydatestyle{#4}}
+      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+      \entrypositionstyle{#1} & \entrydatestyle{#4}}
+    \ifempty{#6}
+      {\\ \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
+      {\\ \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}} \\
+       \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
+  \end{tabular*}%
+}
 
 
 % Define an environment for cvsubentry
