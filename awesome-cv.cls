@@ -167,11 +167,19 @@
 % Set font for header (default is Roboto)
 \newfontfamily\headerfont[
   Path=\@fontdir,
-  UprightFont=*-Regular,
-  ItalicFont=*-Italic,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-BoldItalic,
-]{Roboto}
+  UprightFont=*,
+  ItalicFont=* Italic,
+  BoldFont=* Bold,
+  BoldItalicFont=* Bold Italic,
+]{Georgia}
+
+% \newfontfamily\headerfont[
+%   Path=\@fontdir,
+%   UprightFont=*-Regular,
+%   ItalicFont=*-Italic,
+%   BoldFont=*-Bold,
+%   BoldItalicFont=*-BoldItalic,
+% ]{Roboto}
 
 \newfontfamily\headerfontlight[
   Path=\@fontdir,
